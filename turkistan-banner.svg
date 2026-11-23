@@ -1,0 +1,338 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="karluk-uyghur — Animated Uyghur Software Engineer Banner">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040914" />
+      <stop offset="50%" stop-color="#0A1629" />
+      <stop offset="100%" stop-color="#061A33" />
+    </linearGradient>
+
+    <radialGradient id="ambientGlowLeft" cx="18%" cy="50%" r="32%">
+      <stop offset="0%" stop-color="#0EA5E9" stop-opacity="0.24" />
+      <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="ambientGlowRight" cx="84%" cy="52%" r="30%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="flagBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="52%" stop-color="#0EA5E9" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+
+    <linearGradient id="flagSheen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="44%" stop-color="#E0F2FE" stop-opacity="0.06" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.30" />
+      <stop offset="56%" stop-color="#E0F2FE" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="mapBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.90" />
+      <stop offset="55%" stop-color="#0EA5E9" stop-opacity="0.80" />
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.90" />
+    </linearGradient>
+
+    <linearGradient id="scanBeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#7DD3FC" stop-opacity="0.48" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="energyLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#7DD3FC" stop-opacity="1" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <pattern id="techGrid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M 36 0 L 0 0 0 36" fill="none" stroke="#38BDF8" stroke-opacity="0.08" stroke-width="0.9" />
+      <circle cx="0" cy="0" r="1" fill="#38BDF8" fill-opacity="0.18" />
+    </pattern>
+
+    <pattern id="mapTopo" width="14" height="14" patternUnits="userSpaceOnUse">
+      <path d="M 14 0 L 0 0 0 14" fill="none" stroke="#E0F2FE" stroke-opacity="0.14" stroke-width="0.6" />
+    </pattern>
+
+    <clipPath id="flagClip">
+      <rect x="0" y="0" width="296" height="196" rx="12" />
+    </clipPath>
+
+    <clipPath id="mapClip">
+      <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" />
+    </clipPath>
+
+    <clipPath id="canvasClip">
+      <rect width="1200" height="360" rx="18" />
+    </clipPath>
+  </defs>
+
+  <style>
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes floatAlt {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(5px); }
+    }
+    @keyframes borderTrace {
+      0% { stroke-dashoffset: 1600; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes circuitFlow {
+      0% { stroke-dashoffset: 240; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.45; }
+      50% { opacity: 1; }
+    }
+    @keyframes starPulse {
+      0%, 100% { opacity: 0.85; }
+      50% { opacity: 1; }
+    }
+    .float-flag { animation: floatSlow 5.5s ease-in-out infinite; }
+    .float-map { animation: floatAlt 6s ease-in-out infinite; }
+    .map-trace {
+      stroke-dasharray: 185 1415;
+      animation: borderTrace 6.2s linear infinite;
+    }
+    .circuit-pulse {
+      stroke-dasharray: 28 212;
+      animation: circuitFlow 3.6s linear infinite;
+    }
+    .circuit-pulse-delay {
+      stroke-dasharray: 22 218;
+      animation: circuitFlow 4.4s linear infinite;
+      animation-delay: -1.8s;
+    }
+    .pulse-soft { animation: pulseGlow 3.2s ease-in-out infinite; }
+    .star-glow { animation: starPulse 2.8s ease-in-out infinite; }
+  </style>
+
+  <g clip-path="url(#canvasClip)">
+    <rect width="1200" height="360" fill="url(#bgGrad)" />
+    <rect width="1200" height="360" fill="url(#ambientGlowLeft)" class="pulse-soft" />
+    <rect width="1200" height="360" fill="url(#ambientGlowRight)" class="pulse-soft" />
+
+    <!-- Animated Scrolling Tech Grid -->
+    <g>
+      <rect x="-36" y="-36" width="1272" height="432" fill="url(#techGrid)" />
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="36 36" dur="10s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Global Radar Scanline -->
+    <rect x="0" y="-40" width="1200" height="36" fill="url(#scanBeam)" opacity="0.22">
+      <animate attributeName="y" values="-40;380" dur="7.5s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Live Circuit Traces Connecting Flag -> Core -> Map -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M 332 140 L 354 140 L 364 128 L 372 128" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.4" />
+      <path d="M 332 140 L 354 140 L 364 128 L 372 128" stroke="#7DD3FC" stroke-width="2.2" class="circuit-pulse" filter="url(#neonGlow)" />
+
+      <path d="M 332 200 L 352 200 L 362 214 L 372 214" stroke="#38BDF8" stroke-opacity="0.18" stroke-width="1.2" />
+      <path d="M 332 200 L 352 200 L 362 214 L 372 214" stroke="#38BDF8" stroke-width="1.8" class="circuit-pulse-delay" />
+
+      <path d="M 792 128 L 814 128 L 828 144 L 856 144" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.4" />
+      <path d="M 792 128 L 814 128 L 828 144 L 856 144" stroke="#7DD3FC" stroke-width="2.2" class="circuit-pulse" filter="url(#neonGlow)" />
+
+      <path d="M 792 225 L 818 225 L 832 210 L 860 210" stroke="#38BDF8" stroke-opacity="0.18" stroke-width="1.2" />
+      <path d="M 792 225 L 818 225 L 832 210 L 860 210" stroke="#38BDF8" stroke-width="1.8" class="circuit-pulse-delay" />
+    </g>
+
+    <!-- Twinkling Telemetry Starfield Particles -->
+    <g fill="#7DD3FC">
+      <circle cx="420" cy="40" r="1.6"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.1s" repeatCount="indefinite" /></circle>
+      <circle cx="765" cy="46" r="1.4"><animate attributeName="opacity" values="0.1;0.85;0.1" dur="4.2s" repeatCount="indefinite" /></circle>
+      <circle cx="600" cy="322" r="1.8"><animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.7s" repeatCount="indefinite" /></circle>
+      <circle cx="842" cy="70" r="1.5"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="3.6s" repeatCount="indefinite" /></circle>
+      <circle cx="358" cy="298" r="1.5"><animate attributeName="opacity" values="0.15;0.85;0.15" dur="3.9s" repeatCount="indefinite" /></circle>
+    </g>
+
+    <!-- Outer HUD Frame & Neon Corner Brackets -->
+    <rect x="1.5" y="1.5" width="1197" height="357" rx="17" fill="none" stroke="#38BDF8" stroke-opacity="0.28" stroke-width="1.5" />
+    <g stroke="#38BDF8" stroke-width="2.5" fill="none" filter="url(#neonGlow)">
+      <path d="M 16 38 L 16 16 L 38 16" />
+      <path d="M 1162 16 L 1184 16 L 1184 38" />
+      <path d="M 16 322 L 16 344 L 38 344" />
+      <path d="M 1162 344 L 1184 344 L 1184 322" />
+    </g>
+
+    <!-- Top Status Telemetry Bar -->
+    <g transform="translate(38, 28)">
+      <circle cx="6" cy="0" r="4" fill="#10B981" filter="url(#neonGlow)">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="6" cy="0" r="4" fill="none" stroke="#10B981" stroke-width="1.2">
+        <animate attributeName="r" values="4;11" dur="1.8s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.9;0" dur="1.8s" repeatCount="indefinite" />
+      </circle>
+      <text x="20" y="4" fill="#94A3B8" font-family="Consolas, Menlo, monospace" font-size="10.5" letter-spacing="1.4">
+        SYS::ONLINE · NODE::KARLUK-UYGHUR · ARCHITECTURE::ACTIVE
+      </text>
+      <text x="1124" y="4" text-anchor="end" fill="#38BDF8" font-family="Consolas, Menlo, monospace" font-size="10.5" letter-spacing="1.4" opacity="0.85">
+        43.8256° N, 87.6168° E
+      </text>
+    </g>
+
+    <!-- LEFT PANEL: Animated Celestial Flag (Kök Bayraq) -->
+    <g transform="translate(36, 68)">
+      <g class="float-flag">
+        <rect x="4" y="6" width="296" height="196" rx="12" fill="#0EA5E9" opacity="0.24" filter="url(#softGlow)" />
+        <g clip-path="url(#flagClip)">
+          <rect x="0" y="0" width="296" height="196" fill="url(#flagBlue)" />
+          <rect x="-180" y="0" width="180" height="196" fill="url(#flagSheen)">
+            <animate attributeName="x" values="-180;420" dur="4.2s" repeatCount="indefinite" />
+          </rect>
+          <line x1="0" y1="49" x2="296" y2="49" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+          <line x1="0" y1="147" x2="296" y2="147" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+          <g filter="url(#neonGlow)">
+            <path d="M 156 59 A 46 46 0 1 0 156 137 A 37 37 0 1 1 156 59 Z" fill="#FFFFFF" />
+          </g>
+          <g class="star-glow" filter="url(#neonGlow)">
+            <polygon points="196,98 182,103 183,117 173,106 159,110 167,98 159,86 173,90 183,79 182,93" fill="#FFFFFF" />
+          </g>
+        </g>
+        <rect x="0.75" y="0.75" width="294.5" height="194.5" rx="11.5" fill="none" stroke="#BAE6FD" stroke-opacity="0.55" stroke-width="1.5" />
+      </g>
+      <text x="148" y="234" text-anchor="middle" fill="#7DD3FC" font-family="'Segoe UI', Tahoma, Arial, sans-serif" font-size="12" font-weight="600">
+        <tspan letter-spacing="1.2">EAST TURKISTAN</tspan><tspan dx="6" fill="#38BDF8">·</tspan><tspan dx="6" letter-spacing="0" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, Arial, sans-serif">شەرقىي تۈركىستان</tspan>
+      </text>
+    </g>
+
+    <!-- CENTER PANEL: Centered Glassmorphic Telemetry Identity Card -->
+    <g transform="translate(372, 60)">
+      <rect x="0" y="0" width="420" height="240" rx="14" fill="#0B192E" fill-opacity="0.65" stroke="#38BDF8" stroke-opacity="0.24" stroke-width="1.2" />
+
+      <!-- Terminal Prompt Badge -->
+      <rect x="76" y="16" width="268" height="24" rx="12" fill="#061426" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1" />
+      <text x="210" y="32" text-anchor="middle" fill="#38BDF8" font-family="Consolas, Menlo, monospace" font-size="12" font-weight="700" letter-spacing="1.2">
+        &gt;_ @karluk-uyghur · ARCHITECT
+      </text>
+
+      <!-- Primary English Title -->
+      <text x="210" y="76" text-anchor="middle" fill="#F8FAFC" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" letter-spacing="0.3">
+        Uyghur Software Engineer
+      </text>
+
+      <!-- Primary Uyghur Title -->
+      <text x="210" y="112" text-anchor="middle" fill="#7DD3FC" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, Arial, sans-serif" font-size="21" font-weight="700">
+        ئۇيغۇر يۇمشاق دېتال ئىنژېنېرى
+      </text>
+
+      <!-- Animated Energy Divider -->
+      <line x1="24" y1="132" x2="396" y2="132" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="1.2" />
+      <rect x="24" y="130.8" width="90" height="2.4" rx="1.2" fill="url(#energyLine)" filter="url(#neonGlow)">
+        <animate attributeName="x" values="24;306;24" dur="4.2s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Subtitle EN -->
+      <text x="210" y="158" text-anchor="middle" fill="#E2E8F0" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600">
+        Python &amp; Java Systems · AI Skills &amp; Extensions
+      </text>
+
+      <!-- Subtitle UG (Pure Uyghur — zero BiDi flip, generous card margins) -->
+      <text x="210" y="184" text-anchor="middle" fill="#CBD5E1" font-family="'ALKATIP Tor', 'UKIJ Tuz', 'Noto Naskh Arabic', Tahoma, Arial, sans-serif" font-size="13.5" font-weight="500" direction="rtl" unicode-bidi="isolate">
+        سىستېما ئارخىتېكتورى · سۈنئىي ئەقىل ۋە كېڭەيتىلمە ئىنژېنېرى
+      </text>
+
+      <!-- Tech Pill Badges -->
+      <g transform="translate(22, 200)">
+        <rect x="0" y="0" width="76" height="24" rx="6" fill="#0F294A" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1" />
+        <text x="38" y="15.5" text-anchor="middle" fill="#E0F2FE" font-family="Consolas, Menlo, monospace" font-size="10.5" font-weight="700">PYTHON</text>
+
+        <rect x="84" y="0" width="64" height="24" rx="6" fill="#0F294A" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1" />
+        <text x="116" y="15.5" text-anchor="middle" fill="#E0F2FE" font-family="Consolas, Menlo, monospace" font-size="10.5" font-weight="700">JAVA</text>
+
+        <rect x="156" y="0" width="98" height="24" rx="6" fill="#0F294A" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1" />
+        <text x="205" y="15.5" text-anchor="middle" fill="#E0F2FE" font-family="Consolas, Menlo, monospace" font-size="10.5" font-weight="700">AI SKILLS</text>
+
+        <rect x="262" y="0" width="114" height="24" rx="6" fill="#0F294A" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1" />
+        <text x="319" y="15.5" text-anchor="middle" fill="#E0F2FE" font-family="Consolas, Menlo, monospace" font-size="10.5" font-weight="700">EXTENSIONS</text>
+      </g>
+    </g>
+
+    <!-- RIGHT PANEL: Animated Holographic East Turkistan Map -->
+    <g transform="translate(838, 52) scale(0.92)">
+      <g class="float-map">
+        <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" fill="#0EA5E9" opacity="0.22" filter="url(#softGlow)" />
+        <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" fill="url(#mapBlue)" stroke="#7DD3FC" stroke-width="2" stroke-linejoin="round" />
+
+        <g clip-path="url(#mapClip)">
+          <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" fill="url(#mapTopo)" />
+          <rect x="0" y="-60" width="370" height="54" fill="url(#scanBeam)" opacity="0.72">
+            <animate attributeName="y" values="-60;310" dur="3.8s" repeatCount="indefinite" />
+          </rect>
+        </g>
+
+        <!-- Animated High-Energy Border Trace -->
+        <path d="M 239 0 L 244 0 L 246 2 L 252 1 L 251 7 L 254 10 L 253 13 L 259 18 L 260 22 L 268 28 L 272 27 L 282 36 L 285 49 L 289 54 L 287 72 L 281 78 L 283 88 L 294 93 L 300 92 L 305 95 L 318 96 L 339 113 L 345 113 L 345 118 L 350 125 L 352 135 L 359 143 L 359 146 L 353 150 L 352 163 L 333 166 L 323 173 L 312 186 L 303 187 L 298 199 L 300 207 L 299 214 L 293 213 L 285 217 L 263 219 L 253 223 L 256 237 L 264 243 L 268 253 L 257 258 L 257 262 L 262 265 L 263 272 L 261 274 L 257 274 L 245 268 L 244 270 L 240 270 L 218 258 L 211 260 L 203 258 L 185 258 L 179 266 L 173 266 L 171 268 L 166 264 L 149 268 L 139 268 L 130 264 L 126 257 L 120 256 L 111 262 L 104 262 L 96 257 L 90 257 L 85 252 L 75 261 L 75 267 L 72 270 L 56 268 L 47 260 L 47 242 L 37 239 L 28 233 L 25 228 L 20 228 L 20 224 L 18 223 L 21 217 L 20 210 L 14 206 L 14 202 L 10 198 L 1 196 L 1 192 L 7 192 L 9 194 L 14 192 L 11 187 L 14 178 L 13 173 L 15 171 L 15 168 L 7 162 L 1 163 L 0 157 L 3 154 L 2 147 L 8 144 L 9 138 L 13 135 L 18 136 L 22 133 L 26 133 L 28 130 L 31 132 L 39 131 L 39 138 L 49 137 L 50 139 L 62 128 L 70 132 L 76 131 L 79 133 L 85 127 L 98 123 L 115 121 L 118 108 L 125 105 L 123 101 L 129 100 L 128 78 L 132 68 L 126 65 L 126 62 L 145 62 L 153 60 L 154 65 L 160 64 L 163 67 L 166 62 L 162 58 L 181 26 L 192 36 L 197 35 L 202 37 L 203 40 L 209 37 L 212 38 L 217 34 L 217 21 L 220 13 L 222 11 L 234 11 L 238 6 L 237 3 L 239 0 Z" fill="none" stroke="#E0F2FE" stroke-width="3.2" stroke-linejoin="round" class="map-trace" filter="url(#neonGlow)" />
+
+        <!-- Constellation Network Links -->
+        <g stroke="#BAE6FD" stroke-width="1.1" stroke-opacity="0.55" stroke-dasharray="3 3">
+          <line x1="215" y1="108" x2="72" y2="188" />
+          <line x1="215" y1="108" x2="122" y2="112" />
+          <line x1="215" y1="108" x2="262" y2="132" />
+          <line x1="72" y1="188" x2="132" y2="232" />
+        </g>
+
+        <!-- Pulsing Geo-Tech Sonar Nodes -->
+        <g transform="translate(215, 108)">
+          <circle r="3.5" fill="#FFFFFF" filter="url(#neonGlow)" />
+          <circle r="3.5" fill="none" stroke="#FFFFFF" stroke-width="1.5">
+            <animate attributeName="r" values="3.5;18" dur="2.6s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.95;0" dur="2.6s" repeatCount="indefinite" />
+          </circle>
+        </g>
+        <g transform="translate(72, 188)">
+          <circle r="3.2" fill="#E0F2FE" filter="url(#neonGlow)" />
+          <circle r="3.2" fill="none" stroke="#7DD3FC" stroke-width="1.4">
+            <animate attributeName="r" values="3.2;16" dur="2.6s" begin="0.8s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.9;0" dur="2.6s" begin="0.8s" repeatCount="indefinite" />
+          </circle>
+        </g>
+        <g transform="translate(122, 112)">
+          <circle r="2.8" fill="#E0F2FE" />
+          <circle r="2.8" fill="none" stroke="#7DD3FC" stroke-width="1.2">
+            <animate attributeName="r" values="2.8;14" dur="2.6s" begin="1.5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.85;0" dur="2.6s" begin="1.5s" repeatCount="indefinite" />
+          </circle>
+        </g>
+        <g transform="translate(262, 132)">
+          <circle r="2.6" fill="#E0F2FE" />
+          <circle r="2.6" fill="none" stroke="#7DD3FC" stroke-width="1.2">
+            <animate attributeName="r" values="2.6;13" dur="2.6s" begin="2.1s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.85;0" dur="2.6s" begin="2.1s" repeatCount="indefinite" />
+          </circle>
+        </g>
+
+        <!-- Glowing Crescent & Star Core -->
+        <g transform="translate(178, 174)" filter="url(#neonGlow)">
+          <path d="M 32 -40 A 48 48 0 1 0 32 40 A 38 38 0 1 1 32 -40 Z" fill="#FFFFFF" />
+          <polygon points="68,0 50,6 51,25 39,10 21,16 32,0 21,-16 39,-10 51,-25 50,-6" fill="#FFFFFF" class="star-glow" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

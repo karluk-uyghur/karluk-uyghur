@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Python Async Engine Icon">
+  <defs>
+    <linearGradient id="pyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2544" />
+      <stop offset="100%" stop-color="#071121" />
+    </linearGradient>
+    <linearGradient id="pyAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#FACC15" />
+    </linearGradient>
+    <filter id="iglow"><feGaussianBlur stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#pyBg)" stroke="#38BDF8" stroke-opacity="0.55" stroke-width="1.5" />
+  <g>
+    <circle cx="32" cy="30" r="21" fill="none" stroke="#38BDF8" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="14 8" />
+    <animateTransform attributeName="transform" type="rotate" from="0 32 30" to="360 32 30" dur="10s" repeatCount="indefinite" />
+  </g>
+  <path d="M 16 32 C 21 20, 27 20, 32 30 C 37 40, 43 40, 48 28" fill="none" stroke="url(#pyAccent)" stroke-width="3" stroke-linecap="round" filter="url(#iglow)" />
+  <circle cx="16" cy="32" r="3" fill="#38BDF8"><animate attributeName="r" values="2.5;4;2.5" dur="2s" repeatCount="indefinite" /></circle>
+  <circle cx="48" cy="28" r="3" fill="#FACC15"><animate attributeName="r" values="2.5;4;2.5" dur="2s" begin="1s" repeatCount="indefinite" /></circle>
+  <text x="32" y="55" text-anchor="middle" fill="#94A3B8" font-family="Consolas, Menlo, monospace" font-size="8.2" font-weight="700">PY::ASYNC</text>
+</svg>
